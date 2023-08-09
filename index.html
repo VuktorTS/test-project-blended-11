@@ -4,82 +4,627 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/test-project-blended-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Webstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <script type="module" crossorigin src="/test-project-blended-11/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/test-project-blended-11/assets/index-10c40100.css">
+    <script type="module" crossorigin src="/test-project-blended-11/assets/mobile-menu-e1fef0a7.js"></script>
+    <link rel="stylesheet" href="/test-project-blended-11/assets/index-a9406d8a.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/test-project-blended-11/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a class="logo-nav-link link" href="./index.html"
+        >Web<span class="logo-decoration">Studio</span></a
+      >
+      <ul class="menu-list menu list">
+        <li class="menu-list-item">
+          <a class="menu-link link active" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-list-item">
+          <a class="menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address menu">
+      <ul class="address-list list">
+        <li class="address-list-item">
+          <a class="addres-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
           >
         </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+        <li class="address-list-item">
+          <a class="addres-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
           >
         </li>
       </ul>
+    </address>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="22" fill="currentColor">
+        <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-menu-hamburger"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg fill="currentColor" width="8" height="8">
+        <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu-link-list list">
+      <li class="mobile-menu-link-item">
+        <a
+          class="mobile-menu-link mobile-menu-activ-link link"
+          href="./index.html"
+          >Studio</a
+        >
+      </li>
+      <li class="mobile-menu-link-item">
+        <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+      </li>
+      <li class="mobile-menu-link-item">
+        <a class="mobile-menu-link link" href="/">Contacts</a>
+      </li>
+    </ul>
+    <div>
+      <ul class="mobile-menu-adress-list list">
+        <li class="mobile-menu-adress-item">
+          <a
+            class="mobile-menu-adress-link tel-accent link"
+            href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-adress-item">
+          <a
+            class="mobile-menu-adress-link mail link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu-social-list list">
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-item-link link" href="">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-item-link link" href="">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-item-link link" href="">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-item-link link" href="">
+            <svg class="mobile-menu-social-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+</header>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/test-project-blended-11/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <main>
+      <section class="section-solution">
+  <div class="container">
+    <h1 class="solution-title">Effective Solutions For Your Business</h1>
+    <button class="solution-btn" data-modal-open type="button">
+      Order Service
+    </button>
   </div>
 </section>
 
+      <section class="section-company">
+  <div class="container">
+    <h2 class="visually-hidden">Webstudio</h2>
+    <ul class="company-list list">
+      <li class="company-list-item">
+        <div class="company-item-icons-container">
+          <svg class="icons-svg" width="64" height="64">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-antenna"></use>
+          </svg>
+        </div>
+        <h3 class="company-title">Strategy</h3>
+        <p class="company-text">
+          Our goal is to identify the business problem to walk away with the
+          perfect and creative solution.
+        </p>
+      </li>
+      <li class="company-list-item">
+        <div class="company-item-icons-container">
+          <svg class="icons-svg" width="64" height="64">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-clock"></use>
+          </svg>
+        </div>
+        <h3 class="company-title">Punctuality</h3>
+        <p class="company-text">
+          Bring the key message to the brand's audience for the best price
+          within the shortest possible time.
+        </p>
+      </li>
+      <li class="company-list-item">
+        <div class="company-item-icons-container">
+          <svg class="icons-svg" width="64" height="64">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-diagram"></use>
+          </svg>
+        </div>
+        <h3 class="company-title">Diligence</h3>
+        <p class="company-text">
+          Research and confirm brands that present the strongest digital growth
+          opportunities and minimize risk.
+        </p>
+      </li>
+      <li class="company-list-item">
+        <div class="company-item-icons-container">
+          <svg class="icons-svg" width="64" height="64">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-astronaut"></use>
+          </svg>
+        </div>
+        <h3 class="company-title">Technologies</h3>
+        <p class="company-text">
+          Design practice focused on digital experiences. We bring forth a deep
+          passion for problem-solving.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
 
+      <section class="section-work">
+  <div class="container">
+    <h2 class="work-title">What are we doing</h2>
+    <ul class="work-list list">
+      <li class="work-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/computer-screen-de030a5e.jpg 1x, /test-project-blended-11/assets/computer-screen@2x-86a7203e.jpg 2x"
+          src="/test-project-blended-11/assets/computer-screen-de030a5e.jpg"
+          alt="computer"
+          width="360"
+          height="300"
+        />
+      </li>
+      <li class="work-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/cellphone-8a72e077.jpg 1x, /test-project-blended-11/assets/cellphone@2x-2dbcb387.jpg 2x"
+          src="/test-project-blended-11/assets/cellphone-8a72e077.jpg"
+          alt="phone"
+          width="360"
+          height="300"
+        />
+      </li>
+      <li class="work-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/screen-cellphone-d69379d5.jpg 1x, /test-project-blended-11/assets/screen-cellphone@2x-e63b0772.jpg 2x"
+          src="/test-project-blended-11/assets/screen-cellphone-d69379d5.jpg"
+          alt="phone and computer"
+          width="360"
+          height="300"
+        />
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section-team">
+  <div class="container">
+    <h2 class="team-title">Our Team</h2>
+    <ul class="team-list list">
+      <li class="team-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/mark-guerrero-85208e6c.jpg 1x, /test-project-blended-11/assets/mark-guerrero@2x-60031111.jpg 2x"
+          src="/test-project-blended-11/assets/mark-guerrero-85208e6c.jpg"
+          alt="Mark"
+          width="264"
+          height="260"
+        />
+        <div class="team-name-container">
+          <h3 class="team-name">Mark Guerrero</h3>
+          <p class="team-text">Product Designer</p>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg class="social-svg" width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg class="social-svg" width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg class="social-svg" width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg class="social-svg" width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/tom-ford-8df21284.jpg 1x, /test-project-blended-11/assets/tom-ford@2x-5ddcc7cd.jpg 2x"
+          src="/test-project-blended-11/assets/tom-ford-8df21284.jpg"
+          alt="Tom"
+          width="264"
+          height="260"
+        />
+        <div class="team-name-container">
+          <h3 class="team-name">Tom Ford</h3>
+          <p class="team-text">Frontend Developer</p>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/camila-garcia-8ce26f0b.jpg 1x, /test-project-blended-11/assets/camila-garcia@2x-2e841ba7.jpg 2x"
+          src="/test-project-blended-11/assets/camila-garcia-8ce26f0b.jpg"
+          alt="Camila"
+          width="264"
+          height="260"
+        />
+        <div class="team-name-container">
+          <h3 class="team-name">Camila Garcia</h3>
+          <p class="team-text">Marketing</p>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="team-list-item">
+        <img
+          srcset="/test-project-blended-11/assets/daniel-wilson-aa879b45.jpg 1x, /test-project-blended-11/assets/daniel-wilson@2x-8e97637b.jpg 2x"
+          src="/test-project-blended-11/assets/daniel-wilson-aa879b45.jpg"
+          alt="Deniel"
+          width="264"
+          height="260"
+        />
+        <div class="team-name-container">
+          <h3 class="team-name">Daniel Wilson</h3>
+          <p class="team-text">UI Designer</p>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-item-link link" href="">
+                <svg width="16" height="16">
+                  <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="costomers-section">
+  <div class="container">
+    <h2 class="costomers-tetle">Customers</h2>
+    <ul class="costomers-list list">
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo-1"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo-2"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo-3"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo-4"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="costomers-list-item">
+        <a class="costomers-item-link" href="">
+          <svg class="costomers-svg" width="104" height="56">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Logo-5"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-info">
+      <a class="footer-logo-link link" href="./index.html"
+        >Web<span class="footer-logo-decoration">Studio</span></a
+      >
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
+    </div>
+    <div class="footer-social-container">
+      <p class="footer-social-text">Social media</p>
+      <ul class="footer-social-list list">
+        <li class="footer-social-list-item">
+          <a class="footer-social-item-link link" href="">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-list-item">
+          <a class="footer-social-item-link link" href="">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-list-item">
+          <a class="footer-social-item-link link" href="">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-list-item">
+          <a class="footer-social-item-link link" href="">
+            <svg class="footer-svg" width="24" height="24">
+              <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-form-container">
+      <p class="footer-form-title">Subscribe</p>
+      <form class="footer-form">
+        <label class="footer-form-label">
+          <input
+            class="subscribe-form-input"
+            name="footer-email"
+            type="email"
+            placeholder="E-mail"
+          />
+        </label>
+        <button type="submit" class="footer-form-btn">
+          Subscribe
+          <svg class="footer-form-btn-icon" width="24" height="24">
+            <use
+              class="button-form-imput-use"
+              href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Frame-3"
+            ></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+    <div class="backdrop is-hidden icon-close" data-modal>
+  <div class="modal">
+    <button class="modal-close-btn" type="button" data-modal-close>
+      <svg class="modal-icon-svg" width="8" height="8">
+        <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Leave your contacts and we will call you back</p>
+    <form>
+      <div class="modal-field">
+        <label class="modal-label" for="user-name">Name</label>
+        <div class="input-wrap">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            id="user-name"
+          />
+          <svg class="modal-input-icon" width="18" height="24">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-person-black-18dp-1"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label" for="user-tel">Phone</label>
+        <div class="input-wrap">
+          <input type="tel" name="user-tel" class="modal-input" id="user-tel" />
+          <svg class="modal-input-icon" width="18" height="24">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label" for="user-email">Email</label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            id="user-email"
+          />
+          <svg class="modal-input-icon" width="18" height="24">
+            <use href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="modal-field-textarea">
+        <label class="modal-label" for="user-comment">Comment</label>
+        <textarea
+          class="modal-textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Text input"
+        ></textarea>
+      </div>
+      <div class="checkbox-container">
+        <input
+          class="modal-form-checkbox visually-hidden"
+          type="checkbox"
+          name="user-privacy"
+          id="user-privacy"
+          value="true"
+        />
+        <label class="modal-form-privacy" for="user-privacy">
+          <span class="modal-form-privacy-span">
+            <svg class="modal-form-checkbox-icon" width="10" height="8">
+              <use
+                class="modal-form-checkbox-icon-use"
+                href="/test-project-blended-11/assets/icons-0c81a293.svg#icon-Vector"
+              ></use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the
+          <a class="modal-form-privacy-link" href="#">Privacy Policy</a>
+        </label>
+      </div>
+      <button class="modal-button-order" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
