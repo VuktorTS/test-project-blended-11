@@ -1,0 +1,38 @@
+.section-company {
+  padding: 96px 0;
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+}
+.company-list-item {
+  width: 396px;
+}
+
+.company-item-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--cloud);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: none;
+}
+.company-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.company-text {
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}

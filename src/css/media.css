@@ -1,0 +1,236 @@
+@media screen and (max-width: 428px) {
+  /* .costomers-list-item {
+    width: 190px;
+  } */
+  /* .menu {
+    display: none;
+  } */
+  .section-solution {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/img/office-mob.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(/img/office-mob@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 429px) {
+  /* .menu {
+    display: none;
+  } */
+  .section-solution {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/img/office-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(/img/office-tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .menu {
+    display: flex;
+  }
+  .logo-nav-link {
+    margin-right: 120px;
+  }
+  .address-list-item .addres-link {
+    padding: 0;
+  }
+  /* .header-container .link {
+    padding: 0;
+  } */
+  .menu-toggle {
+    display: none;
+  }
+  .address-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .section-solution {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(/img/office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(/img/office@2x.jpg);
+    }
+  }
+  .solution-title {
+    font-size: 56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  .company-list {
+    column-gap: 24px;
+  }
+  .company-list-item {
+    width: 356px;
+  }
+  .company-title {
+    text-align: left;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+  .costomers-list {
+    column-gap: 24px;
+  }
+  .costomers-list-item {
+    width: 168px;
+  }
+  .footer {
+    text-align: left;
+    padding: 100px 0;
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    max-width: 552px;
+  }
+  .footer-info {
+    margin: 0 24px 72px 0;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .footer-social-container {
+    margin: 0;
+  }
+  .footer-form {
+    flex-direction: row;
+  }
+  .subscribe-form-input {
+    width: 264px;
+  }
+  /* PORTFOLIO */
+  .project-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .button-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .project-list {
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+  .project-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .address-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  /* .section-solution {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solution {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../img/office@2x.jpg);
+    }
+  } */
+  .solution-title {
+    margin-bottom: 48px;
+  }
+  .section-company {
+    padding: 120px 0;
+  }
+  .company-list-item {
+    width: 264px;
+  }
+  .company-item-icons-container {
+    display: flex;
+  }
+  .company-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .company-text {
+    font-weight: 400;
+  }
+  .section-work {
+    display: block;
+  }
+  .section-team {
+    padding: 120px 0;
+  }
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+  .footer-info {
+    margin: 0 120px 0 0;
+  }
+  .footer-social-container {
+    margin-right: 80px;
+  }
+  /* PORTFOLIO */
+  .project-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .button-list {
+    margin-bottom: 72px;
+  }
+  .project-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}

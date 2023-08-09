@@ -1,4 +1,21 @@
-/* Reset styles */
+:root {
+  --main-color: #434455;
+  --main-background-color: #ffffff;
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --cloud: #f4f4fd;
+  --customers-color: #8e8f99;
+  --cornflower: #e7e9fc;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--main-color);
+  background-color: var(--main-background-color);
+}
 h1,
 h2,
 h3,
@@ -8,28 +25,16 @@ h6,
 p {
   margin: 0;
 }
-
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
-
-a {
-  color: currentColor;
-  text-decoration: none;
+img {
+  display: block;
+  width: 100%;
 }
 
 button {
   cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  text-align: center;
 }

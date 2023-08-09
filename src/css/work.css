@@ -1,0 +1,17 @@
+.section-work {
+  display: none;
+  padding-bottom: 120px;
+}
+.work-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  color: var(--navy-blue);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.work-list {
+  display: flex;
+  gap: 24px;
+}
